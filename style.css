@@ -1,0 +1,45 @@
+body{
+    background-image: url(./imagenes/pexels-pixabay-159400.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.kario{
+    position: absolute;
+    animation: kario 3s;
+    opacity: 1;
+    top: 23vi;
+    left: 45vi;
+    width: 12vw;
+}
+
+@keyframes kario {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+/*
+.margenBlanca{
+    position: absolute;
+    background-color: white;
+    padding: 50px;
+    top: 15vi;
+    left: 33vi;
+    border-radius: 30px;
+}
+@media screen and (max-width: 600px) {
+    .cuadro-blanco {
+        max-width: 100%;
+    }
+}
+.Media{
+    
+}
