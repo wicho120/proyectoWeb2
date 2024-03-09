@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.mas{
+    margin-left: 7vi;
+    width: 1.3vi;
+}
+.circul{
+    margin-left: 9vi;
+    width: 1.3vi;
+}
+.caneca{
+    margin-left: 9vi;
+    width: 1.3vi;
+}
+.logo{
+    margin-left: 9vi;
+    width: 3vi;
+}
+.report{
+    margin-left: 15vi;
+    width: 1.3vi;
+}
+.circle{
+    margin-left: 9vi;
+    width: 1.3vi;
+}
+.tuerca{
+    margin-left: 9vi;
+    width: 0.8vi;
+}
+.campana{
+    margin-left: 1vi;
+    width: 0.8vi;
+}
+.foto{
+    margin-left: 1vi;
+    width: 3vi;
+    
+}
