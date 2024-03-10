@@ -1,0 +1,199 @@
+@import url("https://fontsgeek.com/fonts/Myriad-Pro-Regular");
+body{
+  font-family:"Myriad";
+  font-family: "pro-regular";
+   
+}
+
+#barra{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 70px;
+    border: gray;
+}
+
+.nav-picture{
+    gap:5px;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    margin-right: 0PX;
+}
+
+.foto{
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+}
+
+.boton{
+  border: none;
+  text-decoration: none;
+  font-family: "Myriad";
+  background-color: transparent;
+  font-size: 24px;
+}
+.space{
+  margin: 0px 0px 0px 25px;
+}
+.titulo{
+  text-align-last: center;
+  font-family:  "Myriad";
+}
+.prr{
+  text-align: center;
+  font-family:  "Myriad";
+  margin-left: 70px;
+}
+
+.space{
+  margin: 5px;
+  }
+.cp{
+  display: flex;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  margin-top: -20px ;
+  }
+  .contenedor {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+    font-family: "Myriad";
+    font-size: 10px;
+    
+  }
+  .contenedor1 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+    font-family: "Myriad";
+    font-size: 10px;
+  }
+  .contenedor2 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+  }
+  .contenedor3 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+  }
+  .contenedor4 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+  }
+  .contenedor5 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+  }
+  .contenedor6 {
+    width: 90%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 8px;
+  }
+  .elemento0 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .elemento1 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+    color: g;
+
+  }
+  .elemento2 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+
+  }
+  .elemento3 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+
+  }
+  .elemento4 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+
+  }
+  .elemento5 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+
+  }
+  .elemento6 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+
+  }
