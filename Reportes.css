@@ -186,51 +186,64 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-@property --progress-value {
-    syntax: '<integer>';
-    inherits: false;
-    initial-value: 0;
+
+.circle-wrap {
+  margin: 150px auto;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes html-progress {
-    to { --progress-value: 31;}
+  100% {
+    transform: rotate(135deg);
   }
-  
-  
-  .progress-bar {
-    width: 3vi;
-    height: 3vi;
-    margin-left: 6.5vi;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .progress-bar::before {
-    counter-reset: percentage var(--progress-value);
-    content: counter(percentage) '%';
-  }
-  
-  .html {
-    background: 
-      radial-gradient(closest-side, white 79%, transparent 80% 100%),
-      conic-gradient(rgb(228, 9, 9) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    animation: html-progress 2s 1 forwards;
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-  }
-  
-  .html::before {
-    animation: html-progress 2s 1 forwards;
-  }
-  
-  progress {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
+}
+
 .marketing{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
