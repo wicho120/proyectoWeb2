@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: inline-block;
+}
+.flex-conteiner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vi;
+}
+
+.mas{
+    margin-left: 7vi;
+    width: 1.3vi;
+}
+.Añadir{
+    text-decoration: none;
+    color: black;
+    margin-left: 0.5vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+}
+.circul{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.caneca{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.logo{
+    margin-left: 8.5vi;
+    width: 3vi;
+}
+.report{
+    margin-left: 14.5vi;
+    width: 1.3vi;
+}
+.circle{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.tuerca{
+    margin-left: 8.5vi;
+    width: 0.8vi;
+}
+.campana{
+    margin-left: 0.5vi;
+    width: 0.8vi;
+}
+.foto{
+    margin-left: 0.5vi;
+    width: 3vi;
+}
+.linea{
+    background-color: rgb(134, 134, 134);
+    width: 100vi;
+    height: 0.1vi;
+    margin-top: 4.5vi;
+}
+.problema{
+    font-size: 3vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin: 50px auto;
+
+
+}
+.pregunta{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    top:35vh;
+  
+    /* position:relative; */
+    /* margin-left: 5vw; */
+
+
+}
+#preguntas{
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 35vi;
+    height: 3.5vi;
+    top: 15%;
+    left: 33vi;
+    border-radius: 1.5vi;
+    margin-top: 10%;
+    background-color: #EEEEEE;
+    border-color: gray;
+        font-size: 35px;
+        text-align: center;
+
+}
+.panel{
+    text-decoration: none;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    color: white;
+    background-color: #FF7C32;
+    width: 10vi;
+    height: 3vi;
+    border-radius: 2vi;
+    border: none;
+    margin-top: 3%;
+    margin-left: 45%;
+    border-color: #c86617;
+}
+.imgl{
+    position: relative;
+    left: 100px;
+}
