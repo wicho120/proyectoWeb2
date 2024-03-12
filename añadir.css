@@ -913,3 +913,70 @@ display: block;
     left: 20vi;
     border-radius: 0.3vi;
 }
+
+@media screen and (max-width: 430px) {
+    .flex-conteiner{
+        flex-direction: column;
+        width: 10vi;
+    }
+    .Añadir{
+        display: none;
+    }
+    .mas{
+        width: 10vi;
+        margin-right: 5vi;
+        margin-top: 5vi;
+    }
+    .circul{
+        margin-top: 5vi;
+        margin-right: 5vi;
+        width: 10vi;
+    }
+    .caneca{
+        margin-top: 5vi;
+        margin-right: 5vi;
+        width: 10vi;
+    }
+    .logo{
+        margin-top: 5vi;
+        margin-right: 5vi;
+        width: 10vi;
+    }
+    .report{
+        margin-top: 6vi;
+        margin-right: 11vi;
+        width: 10vi;
+    }
+    .circle{
+        margin-top: 5vi;
+        margin-right: 5vi;
+        width: 10vi;
+    }
+    .tuerca{
+        width: 4vi;
+        margin-top: 80vi;
+        margin-left: 175vi;
+    }
+    .campana{
+        margin-top: 3vi;
+        width: 4vi;
+        margin-left: 175vi;
+    }
+    .foto{
+        margin-top: 3vi;
+        width: 11vi;
+        margin-left: 175vi;
+    }
+    .linea{
+        display: none;
+    }
+    #cuadroSobrepuesto{
+        top: 171vi;
+        left: 51vi;
+    }
+    #contenidoCuadro{
+        width: 35vi;
+        height: 45vi;
+        background-image: linear-gradient(to bottom, #E66319 11vi, #3E3737 5vi);
+    }
+}
