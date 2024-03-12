@@ -15,9 +15,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-top: 1vi;
 }
-
 .mas{
     margin-left: 7vi;
     width: 1.3vi;
@@ -79,7 +79,7 @@ body{
     font-size: 1vi;
     font-family: 'Myriad pro, regular';
     top: 11vi;
-    left: 31.9vi;
+    left: 36vi;
 }
 .flex-conteiner2{
     position: absolute;
@@ -186,64 +186,50 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-
-.circle-wrap {
-  margin: 150px auto;
-  width: 150px;
-  height: 150px;
-  background: #fefcff;
-  border-radius: 50%;
-  border: 1px solid #cdcbd0;
-}
-
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.circle-wrap .circle .mask {
-  clip: rect(0px, 150px, 150px, 75px);
-}
-
-.circle-wrap .inside-circle {
-  width: 122px;
-  height: 122px;
-  border-radius: 50%;
-  background: #d2eaf1;
-  line-height: 120px;
-  text-align: center;
-  margin-top: 14px;
-  margin-left: 14px;
-  color: #1e51dc;
-  position: absolute;
-  z-index: 100;
-  font-weight: 700;
-  font-size: 2em;
-}
-
-.mask .fill {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
-}
-
-@keyframes fill{
-  0% {
-    transform: rotate(0deg);
+@property --progress-value {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 0;
   }
-  100% {
-    transform: rotate(135deg);
+  
+  @keyframes primer-progress {
+    to { --progress-value: 31;}
   }
-}
 
+  .progress-bar {
+    width: 3vi;
+    height: 3vi;
+    margin-left: 6.1vi;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+  }
+  
+  .primero {
+    background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    animation: primer-progress 2s 1 forwards;
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+  }
+  
+  .primero::before {
+    animation: primer-progress 2s 1 forwards;
+  }
+  
+  progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 .marketing{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -324,10 +310,30 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-.treintauno2{
-    margin-left: 5.5vi;
-    width: 3.3vi;
-}
+@-webkit-keyframes segundo-progress {
+    to {
+      --progress-value: 25;
+    }
+  }
+  @keyframes segundo-progress {
+    to {
+      --progress-value: 25;
+    }
+  }
+  .segundo {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: segundo-progress 2s 1 forwards;
+            animation: segundo-progress 2s 1 forwards;
+  }
+  
+  .segundo::before {
+    -webkit-animation: segundo-progress 2s 1 forwards;
+            animation: segundo-progress 2s 1 forwards;
+  }
+  
+  
 .marketing1{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -386,10 +392,28 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 4.4vi;
 }
-.treintauno3{
-    margin-left: 5.5vi;
-    width: 3vi;
-}
+@-webkit-keyframes tercero-progress {
+    to {
+      --progress-value: 80;
+    }
+  }
+  @keyframes tercero-progress {
+    to {
+      --progress-value: 80;
+    }
+  }
+  .tercero {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: tercero-progress 2s 1 forwards;
+            animation: tercero-progress 2s 1 forwards;
+  }
+  
+  .tercero::before {
+    -webkit-animation: tercero-progress 2s 1 forwards;
+            animation: tercero-progress 2s 1 forwards;
+  }
 .marketing2{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -448,10 +472,28 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3vi;
 }
-.treintauno4{
-    margin-left: 5.3vi;
-    width: 2.9vi;
-}
+@-webkit-keyframes cuarto-progress {
+    to {
+      --progress-value: 32;
+    }
+  }
+  @keyframes cuarto-progress {
+    to {
+      --progress-value: 32;
+    }
+  }
+  .cuarto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: cuarto-progress 2s 1 forwards;
+            animation: cuarto-progress 2s 1 forwards;
+  }
+  
+  .cuarto::before {
+    -webkit-animation: cuarto-progress 2s 1 forwards;
+            animation: cuarto-progress 2s 1 forwards;
+  }
 .marketing3{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -510,10 +552,50 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.2vi;
 }
-.treintauno5{
-    margin-left: 5.2vi;
-    width: 2.9vi;
-}
+@-webkit-keyframes quinto-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  @keyframes quinto-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  .quinto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: quinto-progress 2s 1 forwards;
+            animation: quinto-progress 2s 1 forwards;
+  }
+  
+  .quinto::before {
+    -webkit-animation: quinto-progress 2s 1 forwards;
+            animation: quinto-progress 2s 1 forwards;
+  }
+  @-webkit-keyframes sexto-progress {
+    to {
+      --progress-value: 75;
+    }
+  }
+  @keyframes sexto-progress {
+    to {
+      --progress-value: 75;
+    }
+  }
+  .sexto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(231, 204, 83) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: sexto-progress 2s 1 forwards;
+            animation: sexto-progress 2s 1 forwards;
+  }
+  
+  .sexto::before {
+    -webkit-animation: sexto-progress 2s 1 forwards;
+            animation: sexto-progress 2s 1 forwards;
+  }
 .marketing4{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -602,4 +684,95 @@ display: block;
     color: white;
     top: 12.8vi;
     left: 5.3vi;
+}
+.linea1{
+    position: absolute;
+    top: 17vi;
+    left: 88vi;
+}
+.a{
+    width: 2vi;
+    height: 2vi;
+    margin-top: 0.5vi;
+}
+.linea2{
+    position: absolute;
+    top: 22.5vi;
+    left: 88vi;
+}
+.linea3{
+    position: absolute;
+    top: 28vi;
+    left: 88vi;
+}
+.linea4{
+    position: absolute;
+    top: 33.5vi;
+    left: 88vi;
+}
+.linea5{
+    position: absolute;
+    top: 39.2vi;
+    left: 88vi;
+}
+.linea6{
+    position: absolute;
+    top: 44.5vi;
+    left: 88vi;
+}
+#cuadroSobrepuesto1 {
+    display: none;
+    position: fixed;
+    top: 18vi;
+    left: 35.5vi;
+    z-index: 999;
+    
+}
+#contenidoCuadro1 {
+    width: 30vi;
+    height: 18vi;
+    background-color: #cccccc;
+    border-radius: 0.3vi;
+}
+#cerrarCuadro1 {
+display: block;
+}
+#mostrarCuadro1 {
+cursor: pointer;
+}
+#cuadroSobrepuesto1:target {
+display: block;
+}
+.deseas{
+    position: absolute;
+    top: 3vi;
+    left: 1.7vi;
+    font-size: 2.5vi;
+    font-family: 'Myriad pro, regular';
+}
+.cancelar{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    border: 1px solid black;
+    border-radius: 0.2vi;
+    text-align: center;
+    width: 6vi;
+    top: 10vi;
+    left: 7vi;
+}
+.enviar{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    border: 1px solid black;
+    border-radius: 0.2vi;
+    text-align: center;
+    width: 6vi;
+    top: 10vi;
+    left: 17vi;
 }
