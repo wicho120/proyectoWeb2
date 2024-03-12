@@ -141,68 +141,71 @@ body{
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 430px) {
     .kario{
-        top: 38vh;
-        left: 40vw;
-        width: 25vi;
+        left: 30vi;
+        width: 40vi;
     }
     .margenBlanca{
-        width: 60vi;
-        height: 45vi;
-        top: 35vh;
-        left: 20vw;
+        height: 145vi;
+        width: 80vi;
+        top: 16vh;
+        left: 10vw;
+        border-radius: 10vi;
     }
     .media{
-        top: 1vi;
-        left: 26.01vi;
-        width: 8vw;
+        width: 25vi;
+        left: 27vi;
+        top: 3vi;
     }
     .bienvenido{
-        font-size: 2.1vi;
-        top: 9vi;
-        left: 16.85vi;
+        font-size: 5vi;
+        top: 30vi;
+        left: 9vi;
     }
     .ingresa{
-        font-size: 1.3vi;
-        top: 15vi;
-        left: 12.6vi;
+        font-size: 3vi;
+        top: 47vi;
+        left: 10vi;
+        width: 60vi;
     }
     .usuario{
-        top: 18.5vi;
-        left: 7.2vi;
-        font-size: 2vi;
+        top: 68vi;
+        left: 32vi;
+        font-size: 5vi;
     }
     #usuario2{
-        width: 45vi;
-        height: 3vi;
-        top: 21vi;
-        left: 7vi;
+        width: 56vi;
+        height: 5vi;
+        top: 75vi;
+        left: 11vi;
         border-radius: 1.5vi;
     }
     .contraseña{
-        top: 25.5vi;
-        left: 7.2vi;
-        font-size: 2vi;   
+        top: 90vi;
+        left: 27.5vi;
+        font-size: 5vi;   
     }
     #contraseña2{
-        width: 45vi;
-        height: 3vi;
-        top: 28vi;
-        left: 7vi;
+        width: 56vi;
+        height: 5vi;
+        top: 97vi;
+        left: 11vi;
         border-radius: 1.5vi;
     }
     .panel{
-        top: 34vi;
-        left: 21.5vi;
-        width: 17vi;
-        height: 5vi;
-        border-radius: 2vi;
-        font-size: 2vi;
+        top: 110vi;
+        left: 22.5vi;
+        width: 35vi;
+        height: 10vi;
+        border-radius: 4vi;
+        font-size: 3.5vi;
     }
     .tienes{
-        top: 40vi;
-        left: 7.2vi;
-        font-size: 1.1vi;
+        top: 125vi;
+        left: 10vi;
+        width: 60vi;
+        font-size: 2.2vi;
+        text-align: center;
     }
 }
