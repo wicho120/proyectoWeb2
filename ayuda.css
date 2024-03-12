@@ -67,57 +67,105 @@ body{
     height: 0.1vi;
     margin-top: 4.5vi;
 }
-.problema{
-    font-size: 3vi;
-    font-family: 'Myriad pro, regular';
-    font-weight: bold;
-    margin: 50px auto;
-
-
-}
-.pregunta{
-    display: flex;
-    justify-content: center;
-    margin-top: 160px;
-    top:35vh;
-  
-    /* position:relative; */
-    /* margin-left: 5vw; */
-
-
-}
-#preguntas{
-
-    display: flex;
-    justify-content: center;
+.como{
     position: absolute;
-    width: 35vi;
-    height: 3.5vi;
-    top: 15%;
-    left: 33vi;
+    font-size: 3.5vi;
+    font-family: 'Myriad pro, regular';
+    top: 20vi;
+    left: 29.9vi;
+}
+.pregunta2{
+    position: absolute;
+    width: 40vi;
+    height: 4vi;
     border-radius: 1.5vi;
-    margin-top: 10%;
-    background-color: #EEEEEE;
-    border-color: gray;
-        font-size: 35px;
-        text-align: center;
+    font-size: 1.5vi;
+    padding-left: 2vi;
+    left: 32vi;
+    top: 25vi;
+    
+}
+.lupa{
+    position: absolute;
+    width: 13vi;
+    top: 20.5vi;
+    left: 23vi;
+}
+.enviar{
+    position: absolute;
+    font-size: 1.2vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    background-color: #E66319;
+    width: 12vi;
+    height: 3vi;
+    text-align: center;
+    line-height: 3vi;
+    border-radius: 1vi;
+    top: 30vi;
+    left: 44vi;
 
 }
-.panel{
+#cuadroSobrepuesto {
+    display: none;
+    position: fixed;
+    top: 4.6vi;
+    left: 85vi;
+    z-index: 999;
+    
+}
+
+#contenidoCuadro {
+    width: 15vi;
+    height: 20vi;
+    background-image: linear-gradient(to bottom, #E66319 5vi, #3E3737 5vi);
+    border-radius: 0.3vi;
+}
+#cerrarCuadro {
+display: block;
+}
+#mostrarCuadro {
+cursor: pointer;
+}
+#cuadroSobrepuesto:target {
+display: block;
+}
+.cerrar{
+    position: absolute;
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
     text-decoration: none;
-    font-size: 1vi;
+    color: white;
+    top: 18.5vi;
+    left: 6vi;
+}
+.logologo{
+    position: absolute;
+    width: 6vi;
+    top: 1.5vi;
+    left: 4.5vi;
+}
+.usuario{
+    position: absolute;
+    font-size: 1.7vi;
     font-family: 'Myriad pro, regular';
     color: white;
-    background-color: #FF7C32;
-    width: 10vi;
-    height: 3vi;
-    border-radius: 2vi;
-    border: none;
-    margin-top: 3%;
-    margin-left: 45%;
-    border-color: #c86617;
+    top: 8vi;
+    left: 5vi;
 }
-.imgl{
-    position: relative;
-    left: 100px;
+.login{
+    position: absolute;
+    width: 1.5vi;
+    top: 13vi;
+    left: 3.5vi;
+}
+.logout{
+    position: absolute;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    top: 12.8vi;
+    left: 5.3vi;
 }
