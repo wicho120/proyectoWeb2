@@ -64,4 +64,4 @@ En esta sección el usuario podrá resolver dudas o  problemas que pueda encontr
 #### Creado por
 
 - Helen Parga
-- Daivid Velasquez
+- Deivid Velasquez
