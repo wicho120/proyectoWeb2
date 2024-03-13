@@ -8,6 +8,7 @@ Dicho esto, el propósito de dicho trabajo es replicar la propuesta dada por par
 
 ![image-20240313155727346](C:\Users\win10\AppData\Roaming\Typora\typora-user-images\image-20240313155727346.png)
 
+
 ```html
 
 ```
@@ -53,6 +54,13 @@ La pagina web cuenta con la sección de reportes, aquí el usuario podrá revisa
 En esta sección el usuario podrá resolver dudas o  problemas que pueda encontrar en el momento de interactuar con la pagina web
 
 ![image-20240313161145771](C:\Users\win10\AppData\Roaming\Typora\typora-user-images\image-20240313161145771.png)
+
+
+
+
+
+
+![Captura](https://github.com/Deivid2022/PROYECTO_VelasquezDeivid_PargaHelen/assets/156430545/67bf997e-3bbb-4fc2-8c5a-5b2915724c6b)
 
 
 
