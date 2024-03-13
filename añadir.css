@@ -924,45 +924,36 @@ display: block;
 }
 .b{
     display: none;
+}   
+.medialogo{
+    display: none;
 }
-
 @media screen and (max-width: 600px) {
     .flex-conteiner{
         flex-direction: column;
         width: 10vi;
+        top: 100vi;
     }
     .Añadir{
         display: none;
     }
     .mas{
-        width: 10vi;
-        margin-right: 5vi;
-        margin-top: 5vi;
+        display: none;
     }
     .circul{
-        margin-top: 5vi;
-        margin-right: 5vi;
-        width: 10vi;
+        display: none;
     }
     .caneca{
-        margin-top: 5vi;
-        margin-right: 5vi;
-        width: 10vi;
+        display: none;
     }
     .logo{
-        margin-top: 5vi;
-        margin-right: 5vi;
-        width: 10vi;
+        display: none;
     }
     .report{
-        margin-top: 6vi;
-        margin-right: 11vi;
-        width: 10vi;
+        display: none;
     }
     .circle{
-        margin-top: 5vi;
-        margin-right: 5vi;
-        width: 10vi;
+        display: none;
     }
     .tuerca{
         width: 4vi;
@@ -1018,13 +1009,10 @@ display: block;
     .indicadores{
         font-size: 8vi;
         left: 18vi;
+        top: 23vi;
     }
     .Aqui{
-        font-size: 4.1vi;
-        top: 20vi;
-        left: 18vi;
-        width: 70vi;
-        text-align: center;
+        display: none;
     }
     .flex-conteiner2{
         flex-direction: column;
@@ -1112,16 +1100,14 @@ display: block;
         width: 60vi;
     }
     .linea1{
-        top: 40vi;
-        left: 75vi;
+        display: none;
     }
     .a{
         width: 6vi;
         height: 1vi;
     }
     .linea2{
-        top: 122vi;
-        left: 75vi;
+        display: none;
     }
     .segundo{
         font-size: 5vi;
@@ -1328,5 +1314,12 @@ display: block;
         color: white;
         text-align: center;
         font-family: 'Myriad pro, regular';
+    }
+    .medialogo{
+        position: absolute;
+        display: block;
+        width: 15vi;
+        top: 5vi;
+        left: 43vi;
     }
 }
