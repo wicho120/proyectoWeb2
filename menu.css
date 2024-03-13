@@ -1,0 +1,73 @@
+@media screen and (max-width: 600px) {
+    .flex-conteiner{
+        position: relative;
+        text-align: center;
+        left: 1vi;
+        background-color: #fbfdff;
+        padding: 10px;
+        border-radius: 4vi;
+        top: 50vi;
+        height: 140vi;
+    } 
+    .Añadir{
+    display: none;
+    }
+    .mas{
+        top: 20%;
+        position: absolute;
+        left:50% ;
+        transform: translate(-50%,-50%);
+    }
+    .circul{
+        top: 40%;
+        position: absolute;
+        left:50% ;
+        transform: translate(-50%,-50%);
+        
+    }
+
+    }
+    .caneca{
+        top: 60%;
+        position: absolute;
+        left:50% ;
+        transform: translate(-50%,-50%);
+    }
+    .logo{
+        position: absolute;
+        top:10vi ;
+        left: 40vi;
+        
+    }
+
+    .report{
+        top: 80%;
+        position: absolute;
+        left:50% ;
+        transform: translate(-50%,-50%);
+    }
+    .circle{
+        top: 100%;
+        position: absolute;
+        left:50% ;
+        transform: translate(-50%,-50%);
+    }
+
+    .tuerca{
+        width: 4vi;
+        margin-top: 35vh;
+        margin-left: 175vi;
+    }
+    .campana{
+        margin-top: 3vi;
+        width: 4vi;
+        margin-left: 175vi;
+    }
+    .foto{
+        margin-top: 3vi;
+        width: 11vi;
+        margin-left: 175vi;
+    }
+
+
+
