@@ -10,9 +10,6 @@ Dicho esto, el propósito de dicho trabajo es replicar la propuesta dada por par
 
 ![USUARIO](https://github.com/Deivid2022/PROYECTO_VelasquezDeivid_PargaHelen/assets/156430545/b757594b-2dce-4449-815a-c15951964c4d)
 
-```html
-
-```
 
 #### OBJETIVO
 
@@ -25,8 +22,6 @@ A continuación  se podrá evidenciar como fue la maquetación de cada uno de lo
 #### bienvenida al usuario
 
 la pagina web cuenta con una amena y agradable  bienvenida  para el usuario
-
-![image-20240313162315870](C:\Users\win10\AppData\Roaming\Typora\typora-user-images\image-20240313162315870.png)
 
 
 ![BIENVENIDA](https://github.com/Deivid2022/PROYECTO_VelasquezDeivid_PargaHelen/assets/156430545/b07f420f-f81c-4570-b6bf-97e4c5f8c9a3)
