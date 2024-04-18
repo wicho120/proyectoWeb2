@@ -26,20 +26,25 @@ body{
     }
     
 }
-/*
+
 .margenBlanca{
     position: absolute;
     background-color: white;
-    padding: 50px;
+    padding: 15vi 17vi;
     top: 15vi;
     left: 33vi;
-    border-radius: 30px;
+    border-radius: 3vi;
 }
-@media screen and (max-width: 600px) {
-    .cuadro-blanco {
-        max-width: 100%;
-    }
+.media{
+    position: absolute;
+    top: 0.5vi;
+    left: 15vi;
+    width: 5vw;
 }
-.Media{
-    
+.bienvenido{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5vi;
+    top: 3.5vi;
+    left: 8vi;
 }
