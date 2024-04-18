@@ -1324,6 +1324,7 @@ display: block;
         width: 20vi;
         height: 5vi;
         border-radius: 1vi;
+        line-height: 5vi;
         color: white;
         text-align: center;
         font-family: 'Myriad pro, regular';
