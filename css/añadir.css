@@ -15,9 +15,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-top: 1vi;
 }
-
 .mas{
     margin-left: 7vi;
     width: 1.3vi;
@@ -192,14 +192,14 @@ body{
     initial-value: 0;
   }
   
-  @keyframes html-progress {
+  @keyframes primer-progress {
     to { --progress-value: 31;}
   }
 
   .progress-bar {
     width: 3vi;
     height: 3vi;
-    margin-left: 6.5vi;
+    margin-left: 6.1vi;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -212,17 +212,17 @@ body{
     content: counter(percentage) '%';
   }
   
-  .html {
+  .primero {
     background: 
-      radial-gradient(closest-side, white 79%, transparent 80% 100%),
-      conic-gradient(rgb(228, 9, 9) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    animation: html-progress 2s 1 forwards;
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    animation: primer-progress 2s 1 forwards;
     font-family: 'Myriad pro, regular';
     font-size: 0.8vi;
   }
   
-  .html::before {
-    animation: html-progress 2s 1 forwards;
+  .primero::before {
+    animation: primer-progress 2s 1 forwards;
   }
   
   progress {
@@ -310,46 +310,29 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-@property --progress-value {
-    syntax: '<integer>';
-    inherits: false;
-    initial-value: 0;
-    
+@-webkit-keyframes segundo-progress {
+    to {
+      --progress-value: 25;
+    }
   }
-  
-  @keyframes html-progress{
-    to { --progress-value: 25;}
+  @keyframes segundo-progress {
+    to {
+      --progress-value: 25;
+    }
   }
-  
-  
-  .progress-bar {
-    width: 3vi;
-    height: 3vi;
-    margin-left: 6.2vi;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .progress-bar1::before {
-    counter-reset: percentage var(--progress-value);
-    content: counter(percentage) '%';
-  }
-  
-  .html {
-    background: 
-      radial-gradient(closest-side, white 79%, transparent 80% 100%),
-      conic-gradient(rgb(228, 9, 9) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    animation: html-progress 2s 1 forwards;
+  .segundo {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
     font-family: 'Myriad pro, regular';
     font-size: 0.8vi;
+    -webkit-animation: segundo-progress 2s 1 forwards;
+            animation: segundo-progress 2s 1 forwards;
   }
   
-  .html::before {
-    animation: html-progress 2s 1 forwards;
+  .segundo::before {
+    -webkit-animation: segundo-progress 2s 1 forwards;
+            animation: segundo-progress 2s 1 forwards;
   }
+  
   
 .marketing1{
     font-size: 1.1vi;
@@ -409,49 +392,27 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 4.4vi;
 }
-@property --progress-value2 {
-    syntax: '<integer>';
-    inherits: false;
-    initial-value: 0;
+@-webkit-keyframes tercero-progress {
+    to {
+      --progress-value: 80;
+    }
   }
-  
-  @keyframes html-progress2{
-    to { --progress-value2: 80;}
+  @keyframes tercero-progress {
+    to {
+      --progress-value: 80;
+    }
   }
-  
-  
-  .progress-bar2 {
-    width: 3vi;
-    height: 3vi;
-    margin-left: 6.2vi;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .progress-bar2::before {
-    counter-reset: percentage var(--progress-value2);
-    content: counter(percentage) '%';
-  }
-  
-  .html2 {
-    background: 
-      radial-gradient(closest-side, white 79%, transparent 80% 100%),
-      conic-gradient(rgb(228, 9, 9) calc(var(--progress-value2) * 1%), rgb(255, 255, 255) 0);
-    animation: html-progress2 2s 1 forwards;
+  .tercero {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
     font-family: 'Myriad pro, regular';
     font-size: 0.8vi;
+    -webkit-animation: tercero-progress 2s 1 forwards;
+            animation: tercero-progress 2s 1 forwards;
   }
   
-  .html1::before {
-    animation: html-progress2 2s 1 forwards;
-  }
-  progress {
-    visibility: hidden;
-    width: 0;
-    height: 0;
+  .tercero::before {
+    -webkit-animation: tercero-progress 2s 1 forwards;
+            animation: tercero-progress 2s 1 forwards;
   }
 .marketing2{
     font-size: 1.1vi;
@@ -511,10 +472,28 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3vi;
 }
-.treintauno4{
-    margin-left: 5.3vi;
-    width: 2.9vi;
-}
+@-webkit-keyframes cuarto-progress {
+    to {
+      --progress-value: 32;
+    }
+  }
+  @keyframes cuarto-progress {
+    to {
+      --progress-value: 32;
+    }
+  }
+  .cuarto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: cuarto-progress 2s 1 forwards;
+            animation: cuarto-progress 2s 1 forwards;
+  }
+  
+  .cuarto::before {
+    -webkit-animation: cuarto-progress 2s 1 forwards;
+            animation: cuarto-progress 2s 1 forwards;
+  }
 .marketing3{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -573,10 +552,50 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.2vi;
 }
-.treintauno5{
-    margin-left: 5.2vi;
-    width: 2.9vi;
-}
+@-webkit-keyframes quinto-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  @keyframes quinto-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  .quinto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: quinto-progress 2s 1 forwards;
+            animation: quinto-progress 2s 1 forwards;
+  }
+  
+  .quinto::before {
+    -webkit-animation: quinto-progress 2s 1 forwards;
+            animation: quinto-progress 2s 1 forwards;
+  }
+  @-webkit-keyframes sexto-progress {
+    to {
+      --progress-value: 75;
+    }
+  }
+  @keyframes sexto-progress {
+    to {
+      --progress-value: 75;
+    }
+  }
+  .sexto {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(231, 204, 83) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+    font-family: 'Myriad pro, regular';
+    font-size: 0.8vi;
+    -webkit-animation: sexto-progress 2s 1 forwards;
+            animation: sexto-progress 2s 1 forwards;
+  }
+  
+  .sexto::before {
+    -webkit-animation: sexto-progress 2s 1 forwards;
+            animation: sexto-progress 2s 1 forwards;
+  }
 .marketing4{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -665,4 +684,232 @@ display: block;
     color: white;
     top: 12.8vi;
     left: 5.3vi;
+}
+.linea1{
+    position: absolute;
+    top: 17.2vi;
+    left: 88vi;
+}
+.a{
+    background-color: black;
+    width: 2.5vi;
+    height: 0.3vi;
+    margin-top: 0.5vi;
+}
+.linea2{
+    position: absolute;
+    top: 22.7vi;
+    left: 88vi;
+}
+.linea3{
+    position: absolute;
+    top: 28.2vi;
+    left: 88vi;
+}
+.linea4{
+    position: absolute;
+    top: 33.5vi;
+    left: 88vi;
+}
+.linea5{
+    position: absolute;
+    top: 39vi;
+    left: 88vi;
+}
+.linea6{
+    position: absolute;
+    top: 44.5vi;
+    left: 88vi;
+}
+
+#cuadroSobrepuesto1 {
+    display: none;
+    position: fixed;
+    top: 6vi;
+    left: 20vi;
+    z-index: 999;
+    
+}
+#contenidoCuadro1 {
+    width: 60vi;
+    height: 48vi;
+    background-color: #cccccc;
+    border-radius: 0.3vi;
+}
+#cerrarCuadro1 {
+display: block;
+}
+#mostrarCuadro1 {
+cursor: pointer;
+}
+#cuadroSobrepuesto1:target {
+display: block;
+}
+.enviar{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vi;
+    font-family: 'Myriad pro, regular';
+    top: 45vi;
+    left: 27.5vi;
+    background-color:#FF7C32;
+    width: 5vi;
+    height: 2vi;
+    border-radius: 0.5vi;
+    text-align: center;
+    line-height: 2vi;
+}
+.indicador1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 6vi;
+    top: 2vi;
+}
+.indicador2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 4.2vi;
+    left: 5vi;
+    border-radius: 0.3vi;
+}
+.descripcion1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 34vi;
+    top: 2vi;
+}
+.descripcion2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 4.2vi;
+    left: 33vi;
+    border-radius: 0.3vi;
+}
+.categoria1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 6vi;
+    top: 9vi;
+}
+.categoria2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 11.5vi;
+    left: 5vi;
+    border-radius: 0.3vi;
+}
+.fechai1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 34vi;
+    top: 9vi;
+}
+.fechai2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 11.5vi;
+    left: 33vi;
+    border-radius: 0.3vi;
+}
+.fechaF{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 6vi;
+    top: 16vi;
+}
+.fechaF1{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 18.5vi;
+    left: 5vi;
+    border-radius: 0.3vi;
+}
+.formula1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 34vi;
+    top: 16vi;
+}
+.formula2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 18.5vi;
+    left: 33vi;
+    border-radius: 0.3vi;
+}
+.free0{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 6vi;
+    top: 22.8vi;
+}
+.free{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 25.2vi;
+    left: 5vi;
+    border-radius: 0.3vi;
+}
+.cumplimiento1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 34vi;
+    top: 22.8vi;
+}
+.cumplimiento2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 25.2vi;
+    left: 33vi;
+    border-radius: 0.3vi;
+}
+.area1{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    left: 21vi;
+    top: 31vi;
+}
+.area2{
+    position: absolute;
+    width: 20vi;
+    height: 2vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 33.4vi;
+    left: 20vi;
+    border-radius: 0.3vi;
 }
