@@ -1,73 +1,89 @@
-@media screen and (max-width: 600px) {
-    .flex-conteiner{
-        position: relative;
-        text-align: center;
-        left: 1vi;
-        background-color: #fbfdff;
-        padding: 10px;
-        border-radius: 4vi;
-        top: 50vi;
-        height: 140vi;
-    } 
-    .Añadir{
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+.tuerca{
     display: none;
-    }
-    .mas{
-        top: 20%;
-        position: absolute;
-        left:50% ;
-        transform: translate(-50%,-50%);
-    }
-    .circul{
-        top: 40%;
-        position: absolute;
-        left:50% ;
-        transform: translate(-50%,-50%);
-        
-    }
-
-    }
-    .caneca{
-        top: 60%;
-        position: absolute;
-        left:50% ;
-        transform: translate(-50%,-50%);
+}
+.campana{
+    display: none;
+}
+.foto{
+    display: none;
+}
+.mas{
+    display: none;
+}
+.circul{
+    display: none;
+}
+.caneca{
+    display: none;
+}
+.circle{
+    display: none;
+}
+.report{
+    display: none;
+}
+.logo{
+    position: absolute;
+    width: 10vi;
+    left: 45vi;
+    top: 13vi;
+}
+.pagina{
+    position: absolute;
+    font-size: 4vi;
+    font-family: 'Myriad pro, regular';
+    top: 23vi;
+    left: 16vi;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .pagina{
+        display: none;
     }
     .logo{
-        position: absolute;
-        top:10vi ;
-        left: 40vi;
-        
+        width: 25vi;
+        left: 37.5vi;
     }
-
-    .report{
-        top: 80%;
+    .mas{
         position: absolute;
-        left:50% ;
-        transform: translate(-50%,-50%);
+        display: block;
+        width: 18vi;
+        top: 70vi;
+        left: 41vi;
+    }
+    .menu{
+        position: absolute;
+        display: block;
+        font-size: 10vi;
+        font-family: 'Myriad pro, regular';
+        top: 40vi;
+        left: 19vi;
+    }
+    .caneca{
+        position: absolute;
+        display: block;
+        width: 14vi;
+        top: 95vi;
+        left: 43vi;
+    }
+    .report{
+        position: absolute;
+        display: block;
+        width: 16vi;
+        top: 120vi;
+        left: 42vi;
     }
     .circle{
-        top: 100%;
         position: absolute;
-        left:50% ;
-        transform: translate(-50%,-50%);
+        display: block;
+        width: 17vi;
+        top: 143vi;
+        left: 41.5vi;
     }
-
-    .tuerca{
-        width: 4vi;
-        margin-top: 35vh;
-        margin-left: 175vi;
-    }
-    .campana{
-        margin-top: 3vi;
-        width: 4vi;
-        margin-left: 175vi;
-    }
-    .foto{
-        margin-top: 3vi;
-        width: 11vi;
-        margin-left: 175vi;
-    }
-
-
-
+}
