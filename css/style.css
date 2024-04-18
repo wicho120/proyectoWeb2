@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+
 body{
     background-image: url(./imagenes/pexels-pixabay-159400.png);
     background-repeat: no-repeat;
@@ -8,7 +13,7 @@ body{
 .kario{
     position: absolute;
     animation: kario 3s;
-    opacity: 1;
+    opacity: 0;
     top: 23vi;
     left: 45vi;
     width: 12vw;
@@ -30,21 +35,108 @@ body{
 .margenBlanca{
     position: absolute;
     background-color: white;
-    padding: 15vi 17vi;
-    top: 15vi;
-    left: 33vi;
+    padding: 15vi 20vi;
+    top: 12vi;
+    left: 29vi;
     border-radius: 3vi;
+    animation: blanco 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 .media{
     position: absolute;
     top: 0.5vi;
-    left: 15vi;
+    left: 18vi;
     width: 5vw;
 }
 .bienvenido{
     position: absolute;
     text-align: center;
     font-size: 1.5vi;
-    top: 3.5vi;
-    left: 8vi;
+    top: 5vi;
+    left: 11.5vi;
+    font-family: 'Myriad pro, regular';
+}
+.ingresa{
+    position: absolute;
+    text-align: center;
+    font-size: 0.8vi;
+    top: 10vi;
+    left: 10vi;
+    font-family: 'Myriad pro, regular';
+    color: #6D6D6D;
+}
+.usuario{
+    position: absolute;
+    top: 13vi;
+    left: 6.5vi;
+    font-family: 'Myriad pro, regular';
+    font-size: 1.2vi;
+    color: #6D6D6D;
+}
+#usuario2{
+    position: absolute;
+    border-color: #bebebe;
+    padding: 0.5vi 10vi;
+    top: 15vi;
+    left: 6vi;
+    border-radius: 0.7vi;
+    text-align: center;
+}
+.contraseña{
+    position: absolute;
+    top: 18vi;
+    left: 6.5vi;
+    font-family: 'Myriad pro, regular';
+    font-size: 1.2vi;
+    color: #6D6D6D;
+}
+#contraseña2{
+    position: absolute;
+    border-color: #bebebe;
+    padding: 0.5vi 10vi;
+    top: 20vi;
+    left: 6vi;
+    border-radius: 0.7vi;
+    text-align: center;
+}
+.panel{
+    position: absolute;
+    top: 23.5vi;
+    left: 14vi;
+    text-decoration: none;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    color: white;
+    background-color: #FF7C32;
+    padding: 1vi 3vi;
+    border-radius: 2vi;
+    border: none;
+}
+@media screen and (max-width:820px) {
+    #usuario2{
+        padding: 0.1vi 3vi;
+    }
+    #contraseña2{
+        padding: 0.1vi 3vi;
+    }
+    .tienes{
+        top: 30vi;
+    }
+}
+.tienes{
+    position: absolute;
+    top: 28vi;
+    left: 6vi;
+    font-size: 0.7vi;
+    font-family: 'Myriad pro, regular';
+    color: #6D6D6D;
+}
+@keyframes blanco {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
