@@ -1,48 +1,551 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+}
 .flex-conteiner{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1vi;
 }
+
 .mas{
     margin-left: 7vi;
     width: 1.3vi;
 }
+.Añadir{
+    text-decoration: none;
+    color: black;
+    margin-left: 0.5vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+}
 .circul{
-    margin-left: 9vi;
+    margin-left: 8.5vi;
     width: 1.3vi;
 }
 .caneca{
-    margin-left: 9vi;
+    margin-left: 8.5vi;
     width: 1.3vi;
 }
 .logo{
-    margin-left: 9vi;
+    margin-left: 8.5vi;
     width: 3vi;
 }
 .report{
-    margin-left: 15vi;
+    margin-left: 14.5vi;
     width: 1.3vi;
 }
 .circle{
-    margin-left: 9vi;
+    margin-left: 8.5vi;
     width: 1.3vi;
 }
 .tuerca{
-    margin-left: 9vi;
+    margin-left: 8.5vi;
     width: 0.8vi;
 }
 .campana{
-    margin-left: 1vi;
+    margin-left: 0.5vi;
     width: 0.8vi;
 }
 .foto{
-    margin-left: 1vi;
+    margin-left: 0.5vi;
     width: 3vi;
+}
+.linea{
+    background-color: rgb(134, 134, 134);
+    width: 100vi;
+    height: 0.1vi;
+    margin-top: 4.5vi;
+}
+.indicadores{
+    position: absolute;
+    font-size: 2.7vi;
+    font-family: 'Myriad pro, regular';
+    top: 6vi;
+    left: 38.45vi;
+}
+.Aqui{
+    position: absolute;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    top: 11vi;
+    left: 31.9vi;
+}
+.flex-conteiner2{
+    position: absolute;
+    display: flex;
+    margin-top: 14.5vi;
+    margin-left: 8vi;
+}
+.indicador{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+}
+.descripcion{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 7vi;
+}
+.categoria{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 7vi;
+}
+.fecha1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 2vi;
+}
+.fecha2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 2vi;
+}
+.formula{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 2vi;
+}
+.frecuencia{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 2vi;
+}
+.cumplimiento{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 2.5vi;
+}
+.area{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    font-weight: bold;
+    margin-left: 4vi;
+}
+.flex{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 16.5vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.M{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 1vi;
+}
+.I{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5.3vi;
+}
+.B{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.8vi;
+}
+.cerocinco{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.doce{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 6.1vi;
+}
+.Me{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.6vi;
+}
+.uncuarto{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3.3vi;
+}
+.treintauno{
+    margin-left: 5.7vi;
+    width: 3vi;
+}
+.marketing{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.repeat1{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 17.3vi;
+    left: 88vi;
+}
+.flex1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 22vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.treintauno1{
+    margin-left: 5.5vi;
+    width: 2.8vi;
+}
+.repeat2{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 23vi;
+    left: 88vi;
+}
+.flex2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 27.5vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.M1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 1vi;
+}
+.I1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3vi;
+}
+.B1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.1vi;
+}
+.cerocinco1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.5vi;
+}
+.doce1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 6.1vi;
+}
+.Me1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.6vi;
+}
+.uncuarto1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3.3vi;
+}
+.treintauno2{
+    margin-left: 5.5vi;
+    width: 3.3vi;
+}
+.marketing1{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.repeat3{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 28.5vi;
+    left: 88vi;
+}
+.flex3{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 33vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.M2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 1vi;
+}
+.I2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3vi;
+}
+.B2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.cerocinco2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.5vi;
+}
+.doce2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 6.2vi;
+}
+.Me2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5.4vi;
+}
+.uncuarto2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.4vi;
+}
+.treintauno3{
+    margin-left: 5.5vi;
+    width: 3vi;
+}
+.marketing2{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.repeat4{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 34vi;
+    left: 88vi;
+}
+.flex4{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 38.5vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.M3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 1vi;
+}
+.I3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 0.5vi;
+}
+.B3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.6vi;
+}
+.cerocinco3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5.5vi;
+}
+.doce3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 6.2vi;
+}
+.Me3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.5vi;
+}
+.uncuarto3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3vi;
+}
+.treintauno4{
+    margin-left: 5.3vi;
+    width: 2.9vi;
+}
+.marketing3{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.repeat5{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 39.5vi;
+    left: 88vi;
+}
+.flex5{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 80.5vi;
+    height: 4.5vi;
+    top: 44vi;
+    left: 7vi;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 1.5vi;
+}
+.M4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 1vi;
+}
+.I4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3vi;
+}
+.B4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.7vi;
+}
+.cerocinco4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5.5vi;
+}
+.doce4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 6vi;
+}
+.Me4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 4.5vi;
+}
+.uncuarto4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 3.2vi;
+}
+.treintauno5{
+    margin-left: 5.2vi;
+    width: 2.9vi;
+}
+.marketing4{
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    margin-left: 5vi;
+}
+.repeat6{
+    position: absolute;
+    width: 2.5vi;
+    height: 2vi;
+    top: 45vi;
+    left: 88vi;
+}
+.añadir1{
+    position: absolute;
+    top: 50vi;
+    left: 42.5vi;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    background-color: #FF7C32;
+    width: 15vi;
+    height: 3.5vi;
+    border-radius: 1vi;
+    line-height: 3.1vi;
+    text-align: center;
+}
+#cuadroSobrepuesto {
+    display: none;
+    position: fixed;
+    top: 4.6vi;
+    left: 85vi;
+    z-index: 999;
     
+}
+
+#contenidoCuadro {
+    width: 15vi;
+    height: 20vi;
+    background-image: linear-gradient(to bottom, #E66319 5vi, #3E3737 5vi);
+    border-radius: 0.3vi;
+}
+#cerrarCuadro {
+display: block;
+}
+#mostrarCuadro {
+cursor: pointer;
+}
+#cuadroSobrepuesto:target {
+display: block;
+}
+.cerrar{
+    position: absolute;
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    top: 18.5vi;
+    left: 6vi;
+}
+.logologo{
+    position: absolute;
+    width: 6vi;
+    top: 1.5vi;
+    left: 4.5vi;
+}
+.usuario{
+    position: absolute;
+    font-size: 1.7vi;
+    font-family: 'Myriad pro, regular';
+    color: white;
+    top: 8vi;
+    left: 5vi;
+}
+.login{
+    position: absolute;
+    width: 1.5vi;
+    top: 13vi;
+    left: 3.5vi;
+}
+.logout{
+    position: absolute;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    top: 12.8vi;
+    left: 5.3vi;
 }

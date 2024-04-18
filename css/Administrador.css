@@ -47,6 +47,7 @@
     top: 22vi;
     left: 16.2vi;
 }
+
 @keyframes blancox {
     0%{
         opacity: 0;
@@ -58,6 +59,7 @@
         opacity: 0;
     }
 }
+
 .kario1{
     position: absolute;
     animation: kario 2s forwards;
@@ -79,3 +81,47 @@
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 1024px) {
+
+    .kario1{
+        top: 38vh;
+        left: 40vw;
+        width: 25vi;
+    }
+    .margenBlanca2{
+        width: 60vi;
+        height: 45vi;
+        top: 32vh;
+        left: 20vw;
+    }
+    .logo{
+        top: 1vi;
+        left: 26.01vi;
+        width: 8vw;
+    }
+    .nuevo{
+        font-size: 3vi;
+        top: 9vi;
+        left: 16.7vi;
+    }
+    .welcome{
+        top: 16vi;
+        left: 23vi;
+        width: 14vw;
+    }
+    .neimar{
+        font-size: 3vi;
+        top: 28vi;
+        left: 22.6vi;
+    }
+    .administrador{
+        font-size: 1.3vi;
+        top: 35vi;
+        left: 24.1vi;
+    }
+}
+
+
+
+
