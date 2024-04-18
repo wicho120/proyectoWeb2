@@ -1016,12 +1016,12 @@ display: block;
     }
     .flex-conteiner2{
         flex-direction: column;
-        left: 33vi;
+        left: 30vi;
         top: 25vi;
     }
     .flex{
         flex-direction: column;
-        left: 23vi;
+        left: 20vi;
         top: 38vi;
         height: 80vi;
         width: 60vi;
@@ -1094,7 +1094,7 @@ display: block;
     }
     .flex1{
         flex-direction: column;
-        left: 23vi;
+        left: 20vi;
         top: 120vi;
         height: 80vi;
         width: 60vi;
@@ -1126,7 +1126,7 @@ display: block;
         font-family: 'Myriad pro, regular';
         font-weight: bold;
         font-size: 6vi;
-        left: 41vi;
+        left: 38vi;
         top: 123vi;
     }
     .descripcionme{
@@ -1135,7 +1135,7 @@ display: block;
         font-family: 'Myriad pro, regular';
         font-weight: bold;
         font-size: 6vi;
-        left: 38vi;
+        left: 36vi;
         top: 142.5vi;
     }
     .cumplimientome{
@@ -1144,7 +1144,7 @@ display: block;
         font-family: 'Myriad pro, regular';
         font-weight: bold;
         font-size: 6vi;
-        left: 36vi;
+        left: 34vi;
         top: 165vi;
     }
     .logologo{
@@ -1295,12 +1295,12 @@ display: block;
     .ver{
         position: absolute;
         top: 109vi;
-        left: 43vi;
+        left: 40vi;
     }
     .ver1{
         position: absolute;
         top: 192vi;
-        left: 43vi;
+        left: 40vi;
     }
     .b{
         display: block;
