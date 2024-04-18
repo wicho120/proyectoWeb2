@@ -10,8 +10,8 @@
     top: 23vh;
     left: 29vw;
     border-radius: 3vi;
-    opacity: 0;
-    animation: blancox 4s forwards;
+    opacity: 1;
+    animation: blancox 4s ;
 }
 .logo{
     position:absolute;
@@ -62,7 +62,7 @@
 
 .kario1{
     position: absolute;
-    animation: kario 2s forwards;
+    animation: kario 2s;
     animation-delay: 4s;
     opacity: 0;
     top: 35vh;
@@ -82,28 +82,29 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 430px) {
 
     .kario1{
-        top: 38vh;
-        left: 40vw;
-        width: 25vi;
+        left: 30vi;
+        width: 40vi;
+    
     }
     .margenBlanca2{
-        width: 60vi;
-        height: 45vi;
-        top: 32vh;
-        left: 20vw;
+        height: 145vi;
+        width: 80vi;
+        top: 14vh;
+        left: 8vw;
+        border-radius: 10vi;
     }
     .logo{
-        top: 1vi;
-        left: 26.01vi;
-        width: 8vw;
+        width: 25vi;
+        left: 27vi;
+        top: 3vi;
     }
     .nuevo{
-        font-size: 3vi;
-        top: 9vi;
-        left: 16.7vi;
+        font-size: 5vi;
+        top: 30vi;
+        left: 9vi;
     }
     .welcome{
         top: 16vi;
