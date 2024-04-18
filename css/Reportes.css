@@ -15,9 +15,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     margin-top: 1vi;
 }
+
 .mas{
     margin-left: 7vi;
     width: 1.3vi;
@@ -79,7 +79,7 @@ body{
     font-size: 1vi;
     font-family: 'Myriad pro, regular';
     top: 11vi;
-    left: 36vi;
+    left: 31.9vi;
 }
 .flex-conteiner2{
     position: absolute;
@@ -186,50 +186,64 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-@property --progress-value {
-    syntax: '<integer>';
-    inherits: false;
-    initial-value: 0;
-  }
-  
-  @keyframes primer-progress {
-    to { --progress-value: 31;}
-  }
 
-  .progress-bar {
-    width: 3vi;
-    height: 3vi;
-    margin-left: 6.1vi;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.circle-wrap {
+  margin: 150px auto;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .progress-bar::before {
-    counter-reset: percentage var(--progress-value);
-    content: counter(percentage) '%';
+  100% {
+    transform: rotate(135deg);
   }
-  
-  .primero {
-    background: 
-    radial-gradient(closest-side, white 79%, transparent 80% 100%),
-    conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    animation: primer-progress 2s 1 forwards;
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-  }
-  
-  .primero::before {
-    animation: primer-progress 2s 1 forwards;
-  }
-  
-  progress {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
+}
+
 .marketing{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -310,30 +324,10 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.3vi;
 }
-@-webkit-keyframes segundo-progress {
-    to {
-      --progress-value: 25;
-    }
-  }
-  @keyframes segundo-progress {
-    to {
-      --progress-value: 25;
-    }
-  }
-  .segundo {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-    -webkit-animation: segundo-progress 2s 1 forwards;
-            animation: segundo-progress 2s 1 forwards;
-  }
-  
-  .segundo::before {
-    -webkit-animation: segundo-progress 2s 1 forwards;
-            animation: segundo-progress 2s 1 forwards;
-  }
-  
-  
+.treintauno2{
+    margin-left: 5.5vi;
+    width: 3.3vi;
+}
 .marketing1{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -392,28 +386,10 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 4.4vi;
 }
-@-webkit-keyframes tercero-progress {
-    to {
-      --progress-value: 80;
-    }
-  }
-  @keyframes tercero-progress {
-    to {
-      --progress-value: 80;
-    }
-  }
-  .tercero {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-    -webkit-animation: tercero-progress 2s 1 forwards;
-            animation: tercero-progress 2s 1 forwards;
-  }
-  
-  .tercero::before {
-    -webkit-animation: tercero-progress 2s 1 forwards;
-            animation: tercero-progress 2s 1 forwards;
-  }
+.treintauno3{
+    margin-left: 5.5vi;
+    width: 3vi;
+}
 .marketing2{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -472,28 +448,10 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3vi;
 }
-@-webkit-keyframes cuarto-progress {
-    to {
-      --progress-value: 32;
-    }
-  }
-  @keyframes cuarto-progress {
-    to {
-      --progress-value: 32;
-    }
-  }
-  .cuarto {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-    -webkit-animation: cuarto-progress 2s 1 forwards;
-            animation: cuarto-progress 2s 1 forwards;
-  }
-  
-  .cuarto::before {
-    -webkit-animation: cuarto-progress 2s 1 forwards;
-            animation: cuarto-progress 2s 1 forwards;
-  }
+.treintauno4{
+    margin-left: 5.3vi;
+    width: 2.9vi;
+}
 .marketing3{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -552,50 +510,10 @@ body{
     font-family: 'Myriad pro, regular';
     margin-left: 3.2vi;
 }
-@-webkit-keyframes quinto-progress {
-    to {
-      --progress-value: 95;
-    }
-  }
-  @keyframes quinto-progress {
-    to {
-      --progress-value: 95;
-    }
-  }
-  .quinto {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(41, 189, 22) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-    -webkit-animation: quinto-progress 2s 1 forwards;
-            animation: quinto-progress 2s 1 forwards;
-  }
-  
-  .quinto::before {
-    -webkit-animation: quinto-progress 2s 1 forwards;
-            animation: quinto-progress 2s 1 forwards;
-  }
-  @-webkit-keyframes sexto-progress {
-    to {
-      --progress-value: 75;
-    }
-  }
-  @keyframes sexto-progress {
-    to {
-      --progress-value: 75;
-    }
-  }
-  .sexto {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(rgb(231, 204, 83) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
-    font-family: 'Myriad pro, regular';
-    font-size: 0.8vi;
-    -webkit-animation: sexto-progress 2s 1 forwards;
-            animation: sexto-progress 2s 1 forwards;
-  }
-  
-  .sexto::before {
-    -webkit-animation: sexto-progress 2s 1 forwards;
-            animation: sexto-progress 2s 1 forwards;
-  }
+.treintauno5{
+    margin-left: 5.2vi;
+    width: 2.9vi;
+}
 .marketing4{
     font-size: 1.1vi;
     font-family: 'Myriad pro, regular';
@@ -684,421 +602,4 @@ display: block;
     color: white;
     top: 12.8vi;
     left: 5.3vi;
-}
-.linea1{
-    position: absolute;
-    top: 17vi;
-    left: 88vi;
-}
-.a{
-    width: 2vi;
-    height: 2vi;
-    margin-top: 0.5vi;
-}
-.linea2{
-    position: absolute;
-    top: 22.5vi;
-    left: 88vi;
-}
-.linea3{
-    position: absolute;
-    top: 28vi;
-    left: 88vi;
-}
-.linea4{
-    position: absolute;
-    top: 33.5vi;
-    left: 88vi;
-}
-.linea5{
-    position: absolute;
-    top: 39.2vi;
-    left: 88vi;
-}
-.linea6{
-    position: absolute;
-    top: 44.5vi;
-    left: 88vi;
-}
-#cuadroSobrepuesto1 {
-    display: none;
-    position: fixed;
-    top: 18vi;
-    left: 35.5vi;
-    z-index: 999;
-    
-}
-#contenidoCuadro1 {
-    width: 30vi;
-    height: 18vi;
-    background-color: #cccccc;
-    border-radius: 0.3vi;
-}
-#cerrarCuadro1 {
-display: block;
-}
-#mostrarCuadro1 {
-cursor: pointer;
-}
-#cuadroSobrepuesto1:target {
-display: block;
-}
-.deseas{
-    position: absolute;
-    top: 3vi;
-    left: 1.7vi;
-    font-size: 2.5vi;
-    font-family: 'Myriad pro, regular';
-}
-.cancelar{
-    position: absolute;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5vi;
-    font-family: 'Myriad pro, regular';
-    border: 1px solid black;
-    border-radius: 0.2vi;
-    text-align: center;
-    width: 6vi;
-    top: 10vi;
-    left: 7vi;
-}
-.enviar{
-    position: absolute;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5vi;
-    font-family: 'Myriad pro, regular';
-    border: 1px solid black;
-    border-radius: 0.2vi;
-    text-align: center;
-    width: 6vi;
-    top: 10vi;
-    left: 17vi;
-}
-.indicadorme{
-    display: none;
-}
-.descripcionme{
-    display: none;
-}
-.cumplimientome{
-    display: none;
-}
-.b{
-    display: none;
-}
-.medialogo{
-    display: none;
-}
-@media screen and (max-width: 600px) {
-    .flex-conteiner{
-        flex-direction: column;
-        width: 10vi;
-        top: 100vi;
-    }
-    .Añadir{
-        display: none;
-    }
-    .Añadir{
-        display: none;
-    }
-    .mas{
-        display: none;
-    }
-    .circul{
-        display: none;
-    }
-    .caneca{
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-    .report{
-        display: none;
-    }
-    .circle{
-        display: none;
-    }
-    .tuerca{
-        width: 4vi;
-        margin-top: 35vh;
-        margin-left: 175vi;
-    }
-    .campana{
-        margin-top: 3vi;
-        width: 4vi;
-        margin-left: 175vi;
-    }
-    .foto{
-        margin-top: 3vi;
-        width: 11vi;
-        margin-left: 175vi;
-    }
-    .linea{
-        display: none;
-    }
-    #cuadroSobrepuesto{
-        top: 160vi;
-        left: 51vi;
-    }
-    #contenidoCuadro{
-        width: 35vi;
-        height: 45vi;
-        background-image: linear-gradient(to bottom, #E66319 11vi, #3E3737 5vi);
-    }
-    .flex2{
-        display: none;
-    }
-    .flex3{
-        display: none;
-    }
-    .flex4{
-        display: none;
-    }
-    .flex5{
-        display: none;
-    }
-    .linea3{
-        display: none;
-    }
-    .linea4{
-        display: none;
-    }
-    .linea5{
-        display: none;
-    }
-    .linea6{
-        display: none;
-    }
-    .indicadores{
-        font-size: 8vi;
-        left: 18vi;
-        top: 23vi;
-    }
-    .Aqui{
-        display: none;
-    }
-    .flex-conteiner2{
-        flex-direction: column;
-        left: 31vi;
-        top: 25vi;
-    }
-    .flex{
-        flex-direction: column;
-        left: 21vi;
-        top: 38vi;
-        height: 80vi;
-        width: 60vi;
-    }
-    .categoria{
-        display: none;
-    }
-    .fecha1{
-        display: none;
-    }
-    .fecha2{
-        display: none;
-    }
-    .formula{
-        display: none;
-    }
-    .frecuencia{
-        display: none;
-    }
-    .area{
-        display: none;
-    }
-    .indicador{
-        font-size: 6vi;
-    }
-    .descripcion{
-        font-size: 6vi;
-        margin-left: -3vi;
-        margin-top: 15vi;
-    }
-    .cumplimiento{
-        font-size: 6vi;
-        margin-left: -5vi;
-        margin-top: 15vi;
-    }
-    .M{
-        font-size: 5vi;
-        margin-top: 13vi;
-    }
-    .I{
-        font-size: 5vi;
-        margin-top: 15vi
-    }
-    .progress-bar{
-        width: 15vi;
-        height: 15vi;
-        margin-top: 15vi;
-        margin-left: 1vi;
-    }
-    .primero{
-        font-size: 5vi;
-    }
-    .B{
-        display: none;
-    }
-    .cerocinco{
-        display: none;
-    }
-    .doce{
-        display: none;
-    }
-    .Me{
-        display: none;
-    }
-    .uncuarto{
-        display: none;
-    }
-    .marketing{
-        display: none;
-    }
-    .flex1{
-        flex-direction: column;
-        left: 21vi;
-        top: 120vi;
-        height: 80vi;
-        width: 60vi;
-    }
-    .linea1{
-        top: 40vi;
-        left: 75vi;
-    }
-    .a{
-        width: 10vi;
-        height: 10vi;
-    }
-    .linea2{
-        top: 122vi;
-        left: 75vi;
-    }
-    .segundo{
-        font-size: 5vi;
-    }
-    .añadir1{
-        top: 203vi;
-        left: 36.5vi;
-        width: 27vi;
-        height: 6vi;
-        line-height: 6vi;
-        font-size: 3vi;
-    }
-    .indicadorme{
-        display: block;
-        position: absolute;
-        font-family: 'Myriad pro, regular';
-        font-weight: bold;
-        font-size: 6vi;
-        left: 39vi;
-        top: 123vi;
-    }
-    .descripcionme{
-        display: block;
-        position: absolute;
-        font-family: 'Myriad pro, regular';
-        font-weight: bold;
-        font-size: 6vi;
-        left: 36vi;
-        top: 142.5vi;
-    }
-    .cumplimientome{
-        display: block;
-        position: absolute;
-        font-family: 'Myriad pro, regular';
-        font-weight: bold;
-        font-size: 6vi;
-        left: 34vi;
-        top: 165vi;
-    }
-    .logologo{
-        width: 15vi;
-        top: 2vi;
-        left: 10vi;
-    }
-    .usuario{
-        font-size: 5vi;
-        top: 17.5vi;
-        left: 9.6vi;
-    }
-    .logout{
-        font-size: 3.5vi;
-        top: 28vi;
-        left: 12vi;
-    }
-    .login{
-        width: 4vi;
-        top: 28vi;
-        left: 7vi;
-    }
-    .cerrar{
-        font-size: 3vi;
-        top: 39vi;
-        left: 13.6vi;
-    }
-    #cuadroSobrepuesto1{
-        top: 50vi;
-        left: 13vi;
-    }
-    #contenidoCuadro1{
-        width: 77vi;
-        height: 73vi;
-        border-radius: 1vi;
-    }
-    .deseas{
-        font-size: 7vi;
-        left: 0.5vi;
-        top: 15vi;
-        width: 80vi;
-    }
-    .cancelar{
-        top: 40vi;
-        left: 25.5vi;
-        width: 22vi;
-        height: 5vi;
-        font-size: 3.5vi;
-        line-height: 5vi;
-    }
-    .enviar{
-        top: 50vi;
-        left: 25.5vi;
-        width: 22vi;
-        height: 5vi;
-        font-size: 3.5vi;
-        line-height: 5vi;
-    }
-    .ver{
-        position: absolute;
-        top: 109vi;
-        left: 40vi;
-    }
-    .ver1{
-        position: absolute;
-        top: 192vi;
-        left: 40vi;
-    }
-    .b{
-        display: block;
-        position: absolute;
-        text-decoration: none;
-        background-color: #FF7C32;
-        width: 20vi;
-        height: 5vi;
-        border-radius: 1vi;
-        line-height: 5vi;
-        color: white;
-        text-align: center;
-        font-family: 'Myriad pro, regular';
-    }
-    .medialogo{
-        position: absolute;
-        display: block;
-        width: 15vi;
-        top: 5vi;
-        left: 43vi;
-    }
 }
