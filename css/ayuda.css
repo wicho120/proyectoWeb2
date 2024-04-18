@@ -169,6 +169,9 @@ display: block;
     top: 12.8vi;
     left: 5.3vi;
 }
+.medialogo{
+    display: none;
+}
 @media screen and (max-width: 600px) {
     .flex-conteiner{
         flex-direction: column;
