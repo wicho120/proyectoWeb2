@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: inline-block;
+}
+.flex-conteiner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vi;
+}
+
+.mas{
+    margin-left: 7vi;
+    width: 1.3vi;
+}
+.Añadir{
+    text-decoration: none;
+    color: black;
+    margin-left: 0.5vi;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+}
+.circul{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.caneca{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.logo{
+    margin-left: 8.5vi;
+    width: 3vi;
+}
+.report{
+    margin-left: 14.5vi;
+    width: 1.3vi;
+}
+.circle{
+    margin-left: 8.5vi;
+    width: 1.3vi;
+}
+.tuerca{
+    margin-left: 8.5vi;
+    width: 0.8vi;
+}
+.campana{
+    margin-left: 0.5vi;
+    width: 0.8vi;
+}
+.foto{
+    margin-left: 0.5vi;
+    width: 3vi;
+}
+.linea{
+    background-color: rgb(134, 134, 134);
+    width: 100vi;
+    height: 0.1vi;
+    margin-top: 4.5vi;
+}
+.como{
+    position: absolute;
+    font-size: 3.5vi;
+    font-family: 'Myriad pro, regular';
+    top: 20vi;
+    left: 29.9vi;
+}
+.pregunta2{
+    position: absolute;
+    width: 40vi;
+    height: 4vi;
+    border-radius: 1.5vi;
+    font-size: 1.5vi;
+    padding-left: 2vi;
+    left: 32vi;
+    top: 25vi;
+    
+}
+.lupa{
+    position: absolute;
+    width: 13vi;
+    top: 20.5vi;
+    left: 23vi;
+}
+.enviar{
+    position: absolute;
+    font-size: 1.2vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    background-color: #ff5e00;
+    width: 12vi;
+    height: 3vi;
+    text-align: center;
+    line-height: 3vi;
+    border-radius: 1vi;
+    top: 30vi;
+    left: 44vi;
+
+}
+#cuadroSobrepuesto {
+    display: none;
+    position: fixed;
+    top: 4.6vi;
+    left: 85vi;
+    z-index: 999;
+    
+}
+
+#contenidoCuadro {
+    width: 15vi;
+    height: 20vi;
+    background-image: linear-gradient(to bottom, #E66319 5vi, #3E3737 5vi);
+    border-radius: 0.3vi;
+}
+#cerrarCuadro {
+display: block;
+}
+#mostrarCuadro {
+cursor: pointer;
+}
+#cuadroSobrepuesto:target {
+display: block;
+}
+.cerrar{
+    position: absolute;
+    font-size: 1.1vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    top: 18.5vi;
+    left: 6vi;
+}
+.logologo{
+    position: absolute;
+    width: 6vi;
+    top: 1.5vi;
+    left: 4.5vi;
+}
+.usuario{
+    position: absolute;
+    font-size: 1.7vi;
+    font-family: 'Myriad pro, regular';
+    color: white;
+    top: 8vi;
+    left: 5vi;
+}
+.login{
+    position: absolute;
+    width: 1.5vi;
+    top: 13vi;
+    left: 3.5vi;
+}
+.logout{
+    position: absolute;
+    font-size: 1.5vi;
+    font-family: 'Myriad pro, regular';
+    text-decoration: none;
+    color: white;
+    top: 12.8vi;
+    left: 5.3vi;
+}
+.medialogo{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .flex-conteiner{
+        flex-direction: column;
+        width: 10vi;
+        top: 100vi;
+    }
+    .Añadir{
+        display: none;
+    }
+    .Añadir{
+        display: none;
+    }
+    .mas{
+        display: none;
+    }
+    .circul{
+        display: none;
+    }
+    .caneca{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .report{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .tuerca{
+        width: 4vi;
+        margin-top: 35vh;
+        margin-left: 175vi;
+    }
+    .campana{
+        margin-top: 3vi;
+        width: 4vi;
+        margin-left: 175vi;
+    }
+    .foto{
+        margin-top: 3vi;
+        width: 11vi;
+        margin-left: 175vi;
+    }
+    .linea{
+        display: none;
+    }
+    .como{
+        font-size: 8vi;
+        left: 5vi;
+        top: 50vi;
+    }
+    .logologo{
+        width: 15vi;
+        top: 2vi;
+        left: 10vi;
+    }
+    .usuario{
+        font-size: 5vi;
+        top: 17.5vi;
+        left: 9.6vi;
+    }
+    .logout{
+        font-size: 3.5vi;
+        top: 28vi;
+        left: 12vi;
+    }
+    .login{
+        width: 4vi;
+        top: 28vi;
+        left: 7vi;
+    }
+    .cerrar{
+        font-size: 3vi;
+        top: 39vi;
+        left: 13.6vi;
+    }
+    #cuadroSobrepuesto{
+        top: 160vi;
+        left: 51vi;
+    }
+    #contenidoCuadro{
+        width: 35vi;
+        height: 45vi;
+        background-image: linear-gradient(to bottom, #ff5e00 11vi, #3E3737 5vi);
+    }
+    .deseas{
+        font-size: 7vi;
+        left: 1vi;
+        top: 15vi;
+        width: 80vi;
+    }
+    .cancelar{
+        top: 40vi;
+        left: 25.5vi;
+        width: 22vi;
+        height: 5vi;
+        font-size: 3.5vi;
+        line-height: 5vi;
+    }
+    .enviar{
+        top: 90vi;
+        left: 32.5vi;
+        width: 35vi;
+        height: 8vi;
+        font-size: 3.5vi;
+        line-height: 8.5vi;
+    }
+    .medialogo{
+        position: absolute;
+        display: block;
+        width: 20vi;
+        top: 5vi;
+        left: 40vi;
+    }
+    .lupa{
+        width: 30vi;
+        left: -5vi;
+        top: 60vi;
+    }
+    .pregunta2{
+        width: 78vi;
+        height: 9vi;
+        left: 16vi;
+        top: 70.5vi;
+        font-size: 3.5vi;
+    }
+}

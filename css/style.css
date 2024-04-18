@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+
+body{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-image: url(./imagenes/pexels-pixabay-159400.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    width: 98.8vw;
+    height: 98.5vh;   
+}
+
+.kario{
+    position: absolute;
+    animation: kario 3s;
+    opacity: 0;
+    top: 40vh;
+    left: 45vw;
+    width: 12vi;
+}
+
+@keyframes kario {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.margenBlanca{
+    position: absolute;
+    background-color: white;
+    width: 42vi;
+    height: 31vi;
+    top: 25vh;
+    left: 29vw;
+    border-radius: 3vi;
+    animation: blanco 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+.media{
+    position: absolute;
+    top: 0.5vi;
+    left: 18vi;
+    width: 5vw;
+}
+.bienvenido{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5vi;
+    top: 5vi;
+    left: 11.5vi;
+    font-family: 'Myriad pro, regular';
+}
+.ingresa{
+    position: absolute;
+    text-align: center;
+    font-size: 0.8vi;
+    top: 10vi;
+    left: 10vi;
+    font-family: 'Myriad pro, regular';
+    color: #6D6D6D;
+}
+.usuario{
+    position: absolute;
+    top: 13vi;
+    left: 6.5vi;
+    font-family: 'Myriad pro, regular';
+    font-size: 1.2vi;
+    color: #6D6D6D;
+}
+#usuario2{
+    position: absolute;
+    border-color: #bebebe;
+    width: 29vi;
+    height: 2vi;
+    top: 15vi;
+    left: 6vi;
+    border-radius: 0.7vi;
+    text-align: center;
+}
+.contraseña{
+    position: absolute;
+    top: 18vi;
+    left: 6.5vi;
+    font-family: 'Myriad pro, regular';
+    font-size: 1.2vi;
+    color: #6D6D6D;
+}
+#contraseña2{
+    position: absolute;
+    border-color: #bebebe;
+    width: 29vi;
+    height: 2vi;
+    top: 20vi;
+    left: 6vi;
+    border-radius: 0.7vi;
+    text-align: center;
+}
+.panel{
+    position: absolute;
+    top: 23.5vi;
+    left: 16vi;
+    text-decoration: none;
+    font-size: 1vi;
+    font-family: 'Myriad pro, regular';
+    color: white;
+    background-color: #FF7C32;
+    width: 10vi;
+    height: 3vi;
+    border-radius: 2vi;
+    border: none;
+}
+
+.tienes{
+    position: absolute;
+    top: 28vi;
+    left: 6vi;
+    font-size: 0.7vi;
+    font-family: 'Myriad pro, regular';
+    color: #6D6D6D;
+}
+
+@keyframes blanco {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kario{
+        left: 30vi;
+        width: 40vi;
+    }
+    .margenBlanca{
+        height: 145vi;
+        width: 80vi;
+        top: 16vh;
+        left: 10vw;
+        border-radius: 10vi;
+    }
+    .media{
+        width: 25vi;
+        left: 27vi;
+        top: 3vi;
+    }
+    .bienvenido{
+        font-size: 5vi;
+        top: 30vi;
+        left: 9vi;
+    }
+    .ingresa{
+        font-size: 3vi;
+        top: 47vi;
+        left: 10vi;
+        width: 60vi;
+    }
+    .usuario{
+        top: 68vi;
+        left: 32vi;
+        font-size: 5vi;
+    }
+    #usuario2{
+        width: 56vi;
+        height: 5vi;
+        top: 75vi;
+        left: 11vi;
+        border-radius: 1.5vi;
+    }
+    .contraseña{
+        top: 90vi;
+        left: 27.5vi;
+        font-size: 5vi;   
+    }
+    #contraseña2{
+        width: 56vi;
+        height: 5vi;
+        top: 97vi;
+        left: 11vi;
+        border-radius: 1.5vi;
+    }
+    .panel{
+        top: 110vi;
+        left: 22.5vi;
+        width: 35vi;
+        height: 10vi;
+        border-radius: 4vi;
+        font-size: 3.5vi;
+    }
+    .tienes{
+        top: 125vi;
+        left: 10vi;
+        width: 60vi;
+        font-size: 2.2vi;
+        text-align: center;
+    }
+}

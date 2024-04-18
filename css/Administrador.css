@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+.margenBlanca2{
+    position: absolute;
+    background-color: white;
+    width: 40vi;
+    height: 28vi;
+    top: 23vh;
+    left: 29vw;
+    border-radius: 3vi;
+    opacity: 0;
+    animation: blancox 4s ;
+}
+.logo{
+    position:absolute;
+    top: 1vi;
+    left: 18vi;
+    width: 5vw;
+}
+.nuevo{
+    position: absolute;
+    top: 7vi;
+    left: 11.5vi;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+}
+.welcome{
+    position: absolute;
+    top: 12vi;
+    left: 16.5vi;
+    width: 7vw;
+}
+.neimar{
+    position: absolute;
+    font-size: 2vi;
+    font-family: 'Myriad pro, regular';
+    top: 18vi;
+    left: 15vi;
+}
+.administrador{
+    position: absolute;
+    font-size: 0.8vi;
+    font-family: 'Myriad pro, regular';
+    color: #6D6D6D;
+    top: 22vi;
+    left: 16.2vi;
+}
+
+@keyframes blancox {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.kario1{
+    position: absolute;
+    animation: kario 2s;
+    animation-delay: 4s;
+    opacity: 0;
+    top: 35vh;
+    left: 43vw;
+    width: 12vw;
+}
+
+@keyframes kario {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .kario1{
+        left: 30vi;
+        width: 40vi;
+    
+    }
+    .margenBlanca2{
+        height: 120vi;
+        width: 80vi;
+        top: 20vh;
+        left: 10vw;
+        border-radius: 10vi;
+    }
+    .logo{
+        width: 20vi;
+        left: 30vi;
+        top: 5vi;
+    }
+    .nuevo{
+        font-size: 7vi;
+        top: 30vi;
+        left: 10vi;
+    }
+    .welcome{
+        top: 50vi;
+        left: 24vi;
+        width: 30vw;
+    }
+    .neimar{
+        font-size: 7vi;
+        top: 80vi;
+        left: 22.6vi;
+    }
+    .administrador{
+        font-size: 2.5vi;
+        top: 100vi;
+        left: 28.2vi;
+    }
+}
+
+
+
+

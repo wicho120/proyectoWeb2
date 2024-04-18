@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Myriad pro, regular';
+    src: url(./font/Myriad\ Pro\ Regular.ttf);
+}
+.tuerca{
+    display: none;
+}
+.campana{
+    display: none;
+}
+.foto{
+    display: none;
+}
+.mas{
+    display: none;
+}
+.circul{
+    display: none;
+}
+.caneca{
+    display: none;
+}
+.circle{
+    display: none;
+}
+.report{
+    display: none;
+}
+.logo{
+    position: absolute;
+    width: 10vi;
+    left: 45vi;
+    top: 13vi;
+}
+.pagina{
+    position: absolute;
+    font-size: 4vi;
+    font-family: 'Myriad pro, regular';
+    top: 23vi;
+    left: 16vi;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .pagina{
+        display: none;
+    }
+    .logo{
+        width: 25vi;
+        left: 37.5vi;
+    }
+    .mas{
+        position: absolute;
+        display: block;
+        width: 18vi;
+        top: 70vi;
+        left: 41vi;
+    }
+    .menu{
+        position: absolute;
+        display: block;
+        font-size: 10vi;
+        font-family: 'Myriad pro, regular';
+        top: 40vi;
+        left: 19vi;
+    }
+    .caneca{
+        position: absolute;
+        display: block;
+        width: 14vi;
+        top: 95vi;
+        left: 43vi;
+    }
+    .report{
+        position: absolute;
+        display: block;
+        width: 16vi;
+        top: 120vi;
+        left: 42vi;
+    }
+    .circle{
+        position: absolute;
+        display: block;
+        width: 17vi;
+        top: 143vi;
+        left: 41.5vi;
+    }
+}
